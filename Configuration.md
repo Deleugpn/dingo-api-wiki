@@ -72,6 +72,12 @@ You can also configure this in your `.env` file.
 API_NAME=My API
 ```
 
+When using Laravel 5.2, if you get the error "Class log does not exist", make sure to wrap the API_NAME value with double quotes.
+
+```
+API_NAME="My API"
+```
+
 #### Conditional Requests
 
 By default conditional requests are enabled as it will utilize the clients caching capabilities when possible to cache API requests.
